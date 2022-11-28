@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<html lang='en'>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highcharts Example</title>
+    
+    
+    <!-- 1. Add these JavaScript inclusions in the head of your page -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/data.js"></script>
+    
+    </head>
+    <body>
+      <div id='container'></div>
+      <script>
+        
+      document.addEventListener('DOMContentLoaded', () => {
+          const options = {
+            chart: {
+              type: 'column',
+              zoomType: 'xy'
+            },
+            title: {
+              text: 'Employment rate for university graduates'
+            },
+            yAxis: {
+              title: {
+                text: '% of employement'
+              }
+            }
+          };
+          $.get('hourlywage.csv', csv => {
+            options.data = {
+              csv
+            };
+            Highcharts.chart('container', options);
+          });
+        });
+      </script>
+    
+  </body>
+  </html>
+
