@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_934b5e92fba95d172ddbc9b878a46e52 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_934b5e92fba95d172ddbc9b878a46e52" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_934b5e92fba95d172ddbc9b878a46e52 = L.map(
+                "map_934b5e92fba95d172ddbc9b878a46e52",
+                {
+                    center: [43.23, 12.225909090909092],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+
+            
+
+        
+    
+            var tile_layer_7851960a073fac5ffd2702ac8be27276 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+            var marker_736329a2718b1c3f7e0164e5ca779811 = L.marker(
+                [45.05, 7.51],
+                {"c": "\u00a0Piemonte"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_5abe9c0fcaa6742a25836b116dd8f6a7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_12832f834a1037fb4b27c9ff9101cc08 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgUGllbW9udGU8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTExMTkyPC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj03NDY3PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_5abe9c0fcaa6742a25836b116dd8f6a7.setContent(i_frame_12832f834a1037fb4b27c9ff9101cc08);
+            
+        
+
+        marker_736329a2718b1c3f7e0164e5ca779811.bindPopup(popup_5abe9c0fcaa6742a25836b116dd8f6a7)
+        ;
+
+        
+    
+    
+            var marker_d4dbdc28dd324eb7fecfadab34048a37 = L.marker(
+                [45.73, 7.42],
+                {"c": "\u00a0Valle d\u0027Aosta "}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_311722c844ed193a4edf681d9abc8601 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_a1482f625c409cfb3f4de665d055c27d = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgVmFsbGUgZCdBb3N0YSA8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTE4OTwvbGk+CiAgICAgICAgICAgIDxsaT5NYXN0ZXI9MTI8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_311722c844ed193a4edf681d9abc8601.setContent(i_frame_a1482f625c409cfb3f4de665d055c27d);
+            
+        
+
+        marker_d4dbdc28dd324eb7fecfadab34048a37.bindPopup(popup_311722c844ed193a4edf681d9abc8601)
+        ;
+
+        
+    
+    
+            var marker_a6d309d55a3a4a88a89893266c55dd76 = L.marker(
+                [44.31, 8.39],
+                {"c": "\u00a0Liguria"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_491b5faea7c9a0cf195f28990b4097ab = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_b14fd6edf23526c0928a86765adfb130 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgTGlndXJpYTwvaDE+CiAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+QmFjaGVsb3I9MzQzODwvbGk+CiAgICAgICAgICAgIDxsaT5NYXN0ZXI9MTU0MzwvbGk+CiAgICAgICAgPC91bD4KICAgICAgICA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_491b5faea7c9a0cf195f28990b4097ab.setContent(i_frame_b14fd6edf23526c0928a86765adfb130);
+            
+        
+
+        marker_a6d309d55a3a4a88a89893266c55dd76.bindPopup(popup_491b5faea7c9a0cf195f28990b4097ab)
+        ;
+
+        
+    
+    
+            var marker_65fb0116890b26aa5e54c3bad5879323 = L.marker(
+                [45.47, 9.84],
+                {"c": "\u00a0Lombardia"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_853fa276289d4c71c9c8665e4cd175d4 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_00fe0b82582f13802a3e9c681e27eccc = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgTG9tYmFyZGlhPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj0zMjEzNzwvbGk+CiAgICAgICAgICAgIDxsaT5NYXN0ZXI9MTc4MTE8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_853fa276289d4c71c9c8665e4cd175d4.setContent(i_frame_00fe0b82582f13802a3e9c681e27eccc);
+            
+        
+
+        marker_65fb0116890b26aa5e54c3bad5879323.bindPopup(popup_853fa276289d4c71c9c8665e4cd175d4)
+        ;
+
+        
+    
+    
+            var marker_5645f3be4084fd294550564d2cd677a9 = L.marker(
+                [46.43, 11.16],
+                {"c": "\u00a0Trentino Alto Adige "}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_4e946962b3a66d87f9d9d39eb8238152 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_e968a61dfecb115991a072249627cfe7 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgVHJlbnRpbm8gQWx0byBBZGlnZSA8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTI1ODE8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTEzNzI8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_4e946962b3a66d87f9d9d39eb8238152.setContent(i_frame_e968a61dfecb115991a072249627cfe7);
+            
+        
+
+        marker_5645f3be4084fd294550564d2cd677a9.bindPopup(popup_4e946962b3a66d87f9d9d39eb8238152)
+        ;
+
+        
+    
+    
+            var marker_7f2da2d291cdedd883daff8bc424edbf = L.marker(
+                [46.49, 11.35],
+                {"c": "\u00a0Provincia Autonoma Bolzano "}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_1cdc6698fcb9833af37e6f168e2b1542 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_0fbaf7501b1d189a1218cddd561525c3 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgUHJvdmluY2lhIEF1dG9ub21hIEJvbHphbm8gPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj00ODg8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTgzPC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_1cdc6698fcb9833af37e6f168e2b1542.setContent(i_frame_0fbaf7501b1d189a1218cddd561525c3);
+            
+        
+
+        marker_7f2da2d291cdedd883daff8bc424edbf.bindPopup(popup_1cdc6698fcb9833af37e6f168e2b1542)
+        ;
+
+        
+    
+    
+            var marker_8b843edfa4409c4d47dfb3f22fd34ade = L.marker(
+                [46.07, 11.12],
+                {"c": "\u00a0Provincia Autonoma Trento"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_58285893ad70afe2f206e9fd0b16c0ae = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_fa1b1657374bda2d38530d638c651ba9 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgUHJvdmluY2lhIEF1dG9ub21hIFRyZW50bzwvaDE+CiAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+QmFjaGVsb3I9MjA5MzwvbGk+CiAgICAgICAgICAgIDxsaT5NYXN0ZXI9MTI4OTwvbGk+CiAgICAgICAgPC91bD4KICAgICAgICA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_58285893ad70afe2f206e9fd0b16c0ae.setContent(i_frame_fa1b1657374bda2d38530d638c651ba9);
+            
+        
+
+        marker_8b843edfa4409c4d47dfb3f22fd34ade.bindPopup(popup_58285893ad70afe2f206e9fd0b16c0ae)
+        ;
+
+        
+    
+    
+            var marker_ac88aae5cfe9c398a69aa89d3ba126d8 = L.marker(
+                [45.44, 12.31],
+                {"c": "\u00a0Veneto"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_46799b9d98c315790c41692cc6ebba0d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_30eba6c7bce6a0d257a77cc93495b766 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgVmVuZXRvPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj0xMzk1NDwvbGk+CiAgICAgICAgICAgIDxsaT5NYXN0ZXI9NzA4NDwvbGk+CiAgICAgICAgPC91bD4KICAgICAgICA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_46799b9d98c315790c41692cc6ebba0d.setContent(i_frame_30eba6c7bce6a0d257a77cc93495b766);
+            
+        
+
+        marker_ac88aae5cfe9c398a69aa89d3ba126d8.bindPopup(popup_46799b9d98c315790c41692cc6ebba0d)
+        ;
+
+        
+    
+    
+            var marker_af3c67e2479332c3336b5fb8650bfadb = L.marker(
+                [46.22, 13.1],
+                {"c": "\u00a0Friuli-Venezia Giulia"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_6a7d1686897d2a7dc1570e38ffdc4a68 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_7ebf13841791f15b082ae9c6640acc28 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgRnJpdWxpLVZlbmV6aWEgR2l1bGlhPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj0zNjQyPC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj0xNjI1PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_6a7d1686897d2a7dc1570e38ffdc4a68.setContent(i_frame_7ebf13841791f15b082ae9c6640acc28);
+            
+        
+
+        marker_af3c67e2479332c3336b5fb8650bfadb.bindPopup(popup_6a7d1686897d2a7dc1570e38ffdc4a68)
+        ;
+
+        
+    
+    
+            var marker_7182a63c33e4b832e2f876b6ddf6eba7 = L.marker(
+                [44.59, 11.21],
+                {"c": "\u00a0Emilia-Romagna"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_4db48a69d3fa51a17fde0c30aadf1a54 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_6869fbc4501aa8d3053469fa3b4949e9 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgRW1pbGlhLVJvbWFnbmE8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTE2MDMyPC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj05Mjc3PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_4db48a69d3fa51a17fde0c30aadf1a54.setContent(i_frame_6869fbc4501aa8d3053469fa3b4949e9);
+            
+        
+
+        marker_7182a63c33e4b832e2f876b6ddf6eba7.bindPopup(popup_4db48a69d3fa51a17fde0c30aadf1a54)
+        ;
+
+        
+    
+    
+            var marker_457a05b05cf05112b38796577c370ece = L.marker(
+                [43.77, 11.24],
+                {"c": "\u00a0Toscana"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_1373116f6ff7f250666786e7cc86e11b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_42e90ac78b3bcbbecbfe3d522541a402 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgVG9zY2FuYTwvaDE+CiAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+QmFjaGVsb3I9MTAyMjI8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTU0NDg8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_1373116f6ff7f250666786e7cc86e11b.setContent(i_frame_42e90ac78b3bcbbecbfe3d522541a402);
+            
+        
+
+        marker_457a05b05cf05112b38796577c370ece.bindPopup(popup_1373116f6ff7f250666786e7cc86e11b)
+        ;
+
+        
+    
+    
+            var marker_ccd9e1dffdbe4d3ee423ea655a194abb = L.marker(
+                [42.93, 12.62],
+                {"c": "\u00a0Umbria"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_7e6324e913eea231c25d25217938456b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_e34e54b391312cf4e3e8df533fb96473 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgVW1icmlhPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj0yODA5PC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj0xMTU3PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_7e6324e913eea231c25d25217938456b.setContent(i_frame_e34e54b391312cf4e3e8df533fb96473);
+            
+        
+
+        marker_ccd9e1dffdbe4d3ee423ea655a194abb.bindPopup(popup_7e6324e913eea231c25d25217938456b)
+        ;
+
+        
+    
+    
+            var marker_039acf05f37edd295d8447d4f652b2b8 = L.marker(
+                [43.5, 12.98],
+                {"c": "\u00a0Marche"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_644c86568d1eae17e29138fcfbab7fea = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_2831bc40c8e9ef6ab6edd4f15b5ecab1 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgTWFyY2hlPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj00ODM2PC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj0yMTg4PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_644c86568d1eae17e29138fcfbab7fea.setContent(i_frame_2831bc40c8e9ef6ab6edd4f15b5ecab1);
+            
+        
+
+        marker_039acf05f37edd295d8447d4f652b2b8.bindPopup(popup_644c86568d1eae17e29138fcfbab7fea)
+        ;
+
+        
+    
+    
+            var marker_f97c0617373d78d4f4c422f54c767036 = L.marker(
+                [41.65, 12.98],
+                {"c": "\u00a0Lazio"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_dc5ced052d2c719077b76521f375893c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_df2363f4fa8c9d30a7219878c80072e6 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgTGF6aW88L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTI0NDQwPC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj0xMzc0ODwvbGk+CiAgICAgICAgPC91bD4KICAgICAgICA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_dc5ced052d2c719077b76521f375893c.setContent(i_frame_df2363f4fa8c9d30a7219878c80072e6);
+            
+        
+
+        marker_f97c0617373d78d4f4c422f54c767036.bindPopup(popup_dc5ced052d2c719077b76521f375893c)
+        ;
+
+        
+    
+    
+            var marker_9ab3a59bdbc5e6de4f3c5b8e009f82ab = L.marker(
+                [42.19, 13.72],
+                {"c": "\u00a0Abruzzo"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_6def311ef9ca95aef5bb995c8d2193bb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_44bb4252f342b00969ea1548e1c32cf4 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgQWJydXp6bzwvaDE+CiAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+QmFjaGVsb3I9NjAxNDwvbGk+CiAgICAgICAgICAgIDxsaT5NYXN0ZXI9MjUyMDwvbGk+CiAgICAgICAgPC91bD4KICAgICAgICA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_6def311ef9ca95aef5bb995c8d2193bb.setContent(i_frame_44bb4252f342b00969ea1548e1c32cf4);
+            
+        
+
+        marker_9ab3a59bdbc5e6de4f3c5b8e009f82ab.bindPopup(popup_6def311ef9ca95aef5bb995c8d2193bb)
+        ;
+
+        
+    
+    
+            var marker_efeca3d6dcc7069fef439436906ea225 = L.marker(
+                [41.67, 14.75],
+                {"c": "\u00a0Molise"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_d4e860f9f3d132b5ecfd849d9c643fbf = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_b74046263d0ad7467161c913997f81b4 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgTW9saXNlPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj04ODI8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTI0NDwvbGk+CiAgICAgICAgPC91bD4KICAgICAgICA=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_d4e860f9f3d132b5ecfd849d9c643fbf.setContent(i_frame_b74046263d0ad7467161c913997f81b4);
+            
+        
+
+        marker_efeca3d6dcc7069fef439436906ea225.bindPopup(popup_d4e860f9f3d132b5ecfd849d9c643fbf)
+        ;
+
+        
+    
+    
+            var marker_6c3fd1eed8ba17768ab899e50c6d28d5 = L.marker(
+                [41.1, 14.84],
+                {"c": "\u00a0Campania"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_d7ebfeb097c55183355a48fd7fa79593 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_763eb25f68fbb79289efaab038e48786 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgQ2FtcGFuaWE8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTE4MjY3PC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj04NjA3PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_d7ebfeb097c55183355a48fd7fa79593.setContent(i_frame_763eb25f68fbb79289efaab038e48786);
+            
+        
+
+        marker_6c3fd1eed8ba17768ab899e50c6d28d5.bindPopup(popup_d7ebfeb097c55183355a48fd7fa79593)
+        ;
+
+        
+    
+    
+            var marker_fe25fe0a2f4f89509bea18b8820dad7b = L.marker(
+                [40.79, 17.1],
+                {"c": "\u00a0Puglia"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_fd7c423c3972dfaca33a8db46ad0f879 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_85feaa5fa724578313eb723e856d589f = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgUHVnbGlhPC9oMT4KICAgICAgICA8dWw+CiAgICAgICAgICAgIDxsaT5CYWNoZWxvcj04NjQ2PC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj0zNjg4PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIA==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_fd7c423c3972dfaca33a8db46ad0f879.setContent(i_frame_85feaa5fa724578313eb723e856d589f);
+            
+        
+
+        marker_fe25fe0a2f4f89509bea18b8820dad7b.bindPopup(popup_fd7c423c3972dfaca33a8db46ad0f879)
+        ;
+
+        
+    
+    
+            var marker_636f176e5c8f956c8ec0620a37a215ed = L.marker(
+                [40.64, 15.97],
+                {"c": "\u00a0Basilicata"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_d2f682ac483b1794b93eca91ef83f85b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_272667be38019e5d63acc5fe95e33e82 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgQmFzaWxpY2F0YTwvaDE+CiAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+QmFjaGVsb3I9NjA2PC9saT4KICAgICAgICAgICAgPGxpPk1hc3Rlcj0xOTM8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_d2f682ac483b1794b93eca91ef83f85b.setContent(i_frame_272667be38019e5d63acc5fe95e33e82);
+            
+        
+
+        marker_636f176e5c8f956c8ec0620a37a215ed.bindPopup(popup_d2f682ac483b1794b93eca91ef83f85b)
+        ;
+
+        
+    
+    
+            var marker_3da5c6ce3da161eaf5c4dd0a62f03304 = L.marker(
+                [39.3, 16.34],
+                {"c": "\u00a0Calabria"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_5d1db07dd1524a660e6e2c68d17f55d5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_af6662a44365a1672927001628aa2f5c = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgQ2FsYWJyaWE8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTM4ODM8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTE2NzY8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_5d1db07dd1524a660e6e2c68d17f55d5.setContent(i_frame_af6662a44365a1672927001628aa2f5c);
+            
+        
+
+        marker_3da5c6ce3da161eaf5c4dd0a62f03304.bindPopup(popup_5d1db07dd1524a660e6e2c68d17f55d5)
+        ;
+
+        
+    
+    
+            var marker_2958839bcd4a41325b8f7515a409544c = L.marker(
+                [37.6, 14.01],
+                {"c": "\u00a0Sicilia"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_213491a28ff52885ee5b86b7e56f1319 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_aba04ea7f410817e72069e810609f101 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgU2ljaWxpYTwvaDE+CiAgICAgICAgPHVsPgogICAgICAgICAgICA8bGk+QmFjaGVsb3I9MTA5NTE8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTQ5MDA8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_213491a28ff52885ee5b86b7e56f1319.setContent(i_frame_aba04ea7f410817e72069e810609f101);
+            
+        
+
+        marker_2958839bcd4a41325b8f7515a409544c.bindPopup(popup_213491a28ff52885ee5b86b7e56f1319)
+        ;
+
+        
+    
+    
+            var marker_3c2050ea97ce61d27cd85814c94fb90f = L.marker(
+                [40.12, 9.01],
+                {"c": "\u00a0Sardegna"}
+            ).addTo(map_934b5e92fba95d172ddbc9b878a46e52);
+        
+    
+        var popup_37da06b2f6a93890bbe1948f38d6da21 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            
+                var i_frame_21adf47ee2a505550709fb9959fd8f9d = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8aDE+IMKgU2FyZGVnbmE8L2gxPgogICAgICAgIDx1bD4KICAgICAgICAgICAgPGxpPkJhY2hlbG9yPTM2MTM8L2xpPgogICAgICAgICAgICA8bGk+TWFzdGVyPTEzNzA8L2xpPgogICAgICAgIDwvdWw+CiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_37da06b2f6a93890bbe1948f38d6da21.setContent(i_frame_21adf47ee2a505550709fb9959fd8f9d);
+            
+        
+
+        marker_3c2050ea97ce61d27cd85814c94fb90f.bindPopup(popup_37da06b2f6a93890bbe1948f38d6da21)
+        ;
+
+        
+    
+</script>
+</html>
