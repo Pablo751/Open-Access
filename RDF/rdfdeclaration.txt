@@ -1,0 +1,219 @@
+@prefix adms: <http://www.w3.org/ns/adms#>. 
+@prefix dcat: <http://www.w3.org/ns/dcat#>. 
+@prefix dcatap: <http://data.europa.eu/r5r/>. 
+@prefix dct: <http://purl.org/dc/terms/>. 
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>. 
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>. 
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>. 
+
+dcat:Catalog	dcat:dataset	dcat:Dataset;
+		dcat:dataset	dcat:Dataset;
+		dct:title	"FremTid Data";
+		dcat:distribution	dcat:Distribution;
+		dct:description	"The FremTid dataset contains information about different aspects of education and income in Italy. It is separated by region. The catalog was created within a course, Open Access and Digital Ethics, at the University of Bologna and is not maintained. However, the datasets used for this catalog are maintained by the linked institutions ";
+		dct:issued	"2022/29/11";
+		dct:modified	"2022/29/11";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Education";
+		dcat:keyword	"economy";
+		dcat:keyword	"Italy";
+		owl:versionInfo "0.1.0"
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Agent;
+		dct:creator 	foaf:Agent;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+		foaf:homepage	<https://eldiadelosmuertos0.wixsite.com/fremtid>;
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+
+dct:PeriodOfTime dcat:startDate	"2004";
+			dcat:endDate	"2022".
+
+dcat:Distribution	dcat:accessURL	<https://eldiadelosmuertos0.wixsite.com/fremtid>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+
+dcat:dataset	dcat:Dataset;	
+		dct:title	"Employment rate: Regional data";
+		dct:description	"This dataset is published by I.Stat. The data contains information about the employment rate for people with a university degree, doctoral or specialization course. It is separated by regions.";
+		dct:source   <http://dati.istat.it/index.aspx?queryid=23190>;
+		dct:issued	"2004";
+		dct:modified	"2021";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Labour and wages";
+		dcat:keyword	"employment rate";
+		dcat:keyword	"Italy";
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Organization;
+		dct:creator	foaf:Organization;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+
+dct:PeriodOfTime dcat:startDate	"2004";
+			dcat:endDate	"2021".
+
+dcat:Distribution	dcat:accessURL	<http://dati.istat.it/index.aspx?queryid=23190>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:format <https://w3id.org/fremtid/formats/pc-axis>	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			dcat:byteSize	"1kb";
+			dcat:downloadURL	<https://raw.githubusercontent.com/Pablo751/Open-Access/main/CSV/Datasets/Employment%20rate.csv>;
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+
+dcat:dataset	dcat:Dataset;	
+		dct:title	"Average hourly earnings for employee jobs in the private sector: Level of education";
+		dct:description	"This dataset is published by I.Stat. The data contains information about the hourly wage for employees in the private sector. It is separated by level of education.";
+		dct:source   <http://dati.istat.it/index.aspx?queryid=33475>;
+		dct:issued	"2004";
+		dct:modified	"2019";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Labour and wages";
+		dcat:keyword	"education";
+		dcat:keyword	"Italy";
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Organization;
+		dct:creator	foaf:Organization;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+
+dct:PeriodOfTime dcat:startDate	"2004";
+			dcat:endDate	"2019".
+
+dcat:Distribution	dcat:accessURL	<http://dati.istat.it/index.aspx?queryid=33475>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:format <https://w3id.org/fremtid/formats/pc-axis>	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			dcat:byteSize	"212b";
+			dcat:downloadURL	<https://raw.githubusercontent.com/Pablo751/Open-Access/main/CSV/Datasets/Hourly%20wage.csv>;
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+
+dcat:dataset	dcat:Dataset;	
+		dct:title	"University graduates - occupational status: Region of residence and monthly income";
+		dct:description	"This dataset is published by I.Stat. The data contains information about the monthly income for university graduates. It is measured four years after graduation. It is separated by regions. It is based on the CAWI-CATI questionnaire.";
+		dct:source   <http://dati.istat.it/index.aspx?queryid=25999>;
+		dct:issued	"2015";
+		dct:modified	"2015";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Income";
+		dcat:keyword	"education";
+		dcat:keyword	"Italy";
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Organization;
+		dct:creator	foaf:Organization;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+
+dct:PeriodOfTime dcat:startDate	"2015";
+			dcat:endDate	"2015".
+
+dcat:Distribution	dcat:accessURL	<http://dati.istat.it/index.aspx?queryid=2599>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:format <https://w3id.org/fremtid/formats/pc-axis>	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			dcat:byteSize	"730b";
+			dcat:downloadURL	<https://raw.githubusercontent.com/Pablo751/Open-Access/main/CSV/Monthlyincome.csv>;
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+
+dcat:dataset	dcat:Dataset;	
+		dct:title	"Graduates in Italy";
+		dct:description	"This dataset is published by I.Stat. The data contains information about how many people graduate in Italy. It is separated by type of program and region.";
+		dct:source   <http://dati.istat.it/Index.aspx?lang=en&SubSessionId=08cb0724-4750-496b-9831-d5dbcb9a131f#>;
+		dct:issued	"2007";
+		dct:modified	"2016";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Graduation";
+		dcat:keyword	"education";
+		dcat:keyword	"Italy";
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Organization;
+		dct:creator	foaf:Organization;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+
+dct:PeriodOfTime dcat:startDate	"2007";
+			dcat:endDate	"2016".
+
+dcat:Distribution	dcat:accessURL	<http://dati.istat.it/Index.aspx?lang=en&SubSessionId=08cb0724-4750-496b-9831-d5dbcb9a131f#>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:format <https://w3id.org/fremtid/formats/pc-axis>	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			dcat:byteSize	"779b";
+			dcat:downloadURL	<https://raw.githubusercontent.com/Pablo751/Open-Access/main/CSV/Datasets/Graduated.csv>;
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+
+dcat:dataset	dcat:Dataset;	
+		dct:title	"Resident population on 1st January";
+		dct:description	"This dataset is published by I.Stat. The data contains information about the population in Italy. It is separated by gender and region.";
+		dct:source   <http://dati.istat.it/Index.aspx?lang=en&SubSessionId=6e363f3b-d7fe-462a-99f0-3af75b4d80bb>;
+		dct:issued	"2019";
+		dct:modified	"2022";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Population and households";
+		dcat:keyword	"regions";
+		dcat:keyword	"Italy";
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Organization;
+		dct:creator	foaf:Organization;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+
+dct:PeriodOfTime dcat:startDate	"2019";
+			dcat:endDate	"2022".
+
+dcat:Distribution	dcat:accessURL	<http://dati.istat.it/Index.aspx?lang=en&SubSessionId=6e363f3b-d7fe-462a-99f0-3af75b4d80bb>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:format <https://w3id.org/fremtid/formats/pc-axis>	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			dcat:byteSize	"734b";
+			dcat:downloadURL	<https://raw.githubusercontent.com/Pablo751/Open-Access/main/CSV/Datasets/Population.csv>;
+			adms:status	<http://purl.org/adms/status/Completed>.
+
+
+dcat:dataset	dcat:Dataset;	
+		dct:title	"University indicators";
+		dct:description	"This dataset is published by I.Stat. The data contains information about what percentage of high school graduates enroll in university the same year, how many are there after a year and how many of them graduate. It is separated by region.";
+		dct:source   <http://dati.istat.it/index.aspx?lang=en&SubSessionId=e0bd88df-8e64-4658-8203-534734420596#>;
+		dct:issued	"2008";
+		dct:modified	"2017";
+		dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+		dct:language	<http://publications.europa.eu/resource/authority/language/ENG>
+		dct:language	<http://publications.europa.eu/resource/authority/language/ITA>
+		dcat:keyword	"Education";
+		dcat:keyword	"university";
+		dcat:keyword	"Italy";
+		dct:rights	"Under this licence you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits."
+		dct:publisher	foaf:Organization;
+		dct:creator	foaf:Organization;
+		dct:spatial	<https://dbpedia.org/page/Italy>;
+
+dct:PeriodOfTime dcat:startDate	"2008";
+			dcat:endDate	"2017".
+
+dcat:Distribution	dcat:accessURL	<http://dati.istat.it/index.aspx?lang=en&SubSessionId=e0bd88df-8e64-4658-8203-534734420596#>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/XML>;
+			dct:format	<http://publications.europa.eu/resource/authority/file-type/CSV>;	
+			dct:format <https://w3id.org/fremtid/formats/pc-axis>	
+			dct:license	<https://creativecommons.org/licenses/by/3.0/>;
+			dcat:byteSize	"1kb";
+			dcat:downloadURL	<https://raw.githubusercontent.com/Pablo751/Open-Access/main/CSV/Datasets/Uni%20indicators.csv>;
+			adms:status	<http://purl.org/adms/status/Completed>.
